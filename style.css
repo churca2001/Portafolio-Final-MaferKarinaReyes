@@ -1,0 +1,849 @@
+/* ===========================
+ *   Tipografía y Paleta Turística
+ *   =========================== */
+/* Fuente agradable */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body, h1, h2, h3, h4, h5, h6, p, a, .navbar {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Navbar azul oscuro con textura */
+.navbar {
+  background-color: #102542 !important; /* Azul oscuro */
+  background-image: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png');
+  background-repeat: repeat;
+  box-shadow: 0 2px 8px rgba(16,37,66,0.2);
+}
+
+/* Opcional: mejora el color de los enlaces activos */
+.navbar-nav .nav-link.active {
+  color: #ffd700 !important; /* Dorado */
+}
+:root {
+    --color-azul: #102542;      /* Azul cielo */
+    --color-naranja: #ff7043;   /* Naranja cálido */
+    --color-verde: #43a047;     /* Verde esmeralda */
+    --color-amarillo: #ffca28;  /* Amarillo brillante */
+    --color-claro: #fffde7;     /* Fondo claro */
+    --color-oscuro: #212121;    /* Texto oscuro */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-claro);
+    color: var(--color-oscuro);
+    scroll-behavior: smooth;
+}
+
+/* ===========================
+ *   Navbar
+ *   =========================== */
+.navbar {
+    background: var(--color-azul);
+}
+.navbar .nav-link {
+    color: white !important;
+    font-weight: 600;
+}
+.navbar .nav-link:hover {
+    color: var(--color-amarillo);
+}
+
+/* ===========================
+ *   Hero / Carrusel
+ *   =========================== */
+header .carousel-item img {
+    height: 90vh;
+    object-fit: cover;
+}
+header .carousel-caption {
+    background: rgba(0,0,0,0.55);
+    border-radius: 12px;
+    padding: 25px;
+}
+
+/* =========================== */
+section { padding: 20px 0; }
+#historia { background: #fff8e1; }
+#turismo { background: #e3f2fd; }
+#cultura { background: #f1f8e9; }
+#gastronomia { background: #fff3e0; }
+#oportunidades {
+background: linear-gradient(135deg, var(--color-naranja), var(--color-amarillo));
+color: white;
+}
+
+
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.row g-4{
+    padding: 2%;
+}
+
+.col-md-4{
+    padding: 30px;
+}
+
+.col-md-4 img{
+    width: 100%;
+    height: 80%;
+}
+
+.container p{
+    font-size: 1.5rem;
+    color: #000000;
+    align-items: center;
+    flex: 1 1 50%;
+    max-width: 100%;
+
+}
+
+.card-body h5{
+padding: 1%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #102542;
+  text-shadow: 2px 2px 6px  #102542;
+  margin-bottom: 1.5rem;
+  font-family: 'Georgia', serif;
+}
+/* =========================== Botones =========================== */
+.btn-primary {
+    background: var(--color-naranja);
+    border: none;
+}
+.btn-primary:hover {
+    background: var(--color-verde);
+}
+.btn-light {
+    background: white;
+    color: var(--color-naranja);
+    font-weight: 700;
+}
+.btn-light:hover {
+    background: var(--color-amarillo);
+    color: var(--color-oscuro);
+}
+
+/* =========================== Footer =========================== */
+footer {
+    background: var(--color-verde);
+    color: white;
+    padding: 40px 0;
+}
+footer a {
+    color: var(--color-amarillo);
+    transition: 0.3s;
+}
+footer a:hover {
+    color: var(--color-claro);
+}
+
+
+.separador-verde {
+  width: 60%;
+  height: 6px;
+  margin: 0 auto;
+  background: var(--color-azul);
+  border-radius: 3px;
+}
+
+/* ====== ENCABEZADO ====== */
+.header {
+    text-align: center;
+    background: linear-gradient(to right, #004080, #0066cc);
+    color: white;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* ====== SECCIÓN AUTORES ====== */
+.autores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+}
+
+/* Tarjeta de autor */
+.autores-group,
+.autores-1 {
+    text-align: center;
+    background: #ffffff;
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 6px 15px rgba(0, 51, 102, 0.2);
+    transition: transform 0.3s ease;
+    animation: float 4s ease-in-out infinite;
+}
+
+
+@keyframes float {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.autores-1:hover {
+    transform: scale(1.05);
+}
+
+.autores-1 img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #0066cc;
+    margin-bottom: 15px;
+}
+
+.autores h3 {
+    font-size: 1.3rem;
+    color: #003366;
+    margin: 10px 0 5px;
+}
+
+.autores p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+  margin: 10%;
+  animation: slideUpFade 1s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes slideUpFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.titulo-gastronomia {
+  padding: 3%;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 900;
+  color: #102542;
+  text-shadow: 2px 2px 6px  #102542;
+  margin-bottom: 1.5rem;
+  font-family: 'Georgia', serif;
+}
+
+.gastronomia-img {
+  width: 95%;
+  max-height: 400px;
+  padding: 1%;
+  margin: 2%;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 6px solid;
+  border-image-slice: 1;
+  border-width: 6px;
+  border-image-source: linear-gradient(to right,  #639cec,  #102542);
+  box-shadow: 0 6px 15px rgba(255, 115, 0, 0.5);
+  filter: brightness(1.1);
+  transition: transform 0.4s ease;
+  margin-bottom: 2rem;
+}
+.gastronomia-content {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4A4A4A;
+  padding: 0 1rem 2rem 1rem;
+  max-width: 95%;
+  margin: 2%;
+  background-color: #fff8f0;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(255, 140, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #102542;   ;
+  margin-bottom: 1.8rem;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-shadow: 1px 1px #ffbc7b;
+}
+
+.gastronomia-group {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.gastronomia-1 {
+  flex: 1 1 250px;
+  background: #fff3e6;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(255, 165, 79, 0.2);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gastronomia-1:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(255, 140, 0, 0.4);
+}
+
+.gastronomia-1 img {
+  width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 0.9rem;
+  filter: drop-shadow(2px 3px 2px rgba(0,0,0,0.08));
+}
+
+.gastronomia-1 h3 {
+  font-family: 'Georgia', serif;
+  color:  #102542;
+  margin-bottom: 0.7rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.gastronomia-1 p {
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+
+@media (max-width: 768px) {
+  .gastronomia-group {
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+}
+
+
+/* ======  HISTORIA ====== */
+.Historia {
+    padding: 2%;
+
+    background: linear-gradient(to bottom, #e6f2ff, #cce6ff);
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 51, 102, 0.2);
+}
+
+/* Título */
+.Historia h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Contenedor de texto + imagen */
+.Historia_y_Cultura {
+    display: flex;
+    align-items: flex-start;    
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;           /* en móviles se apila */
+    text-align: left;          /* alinea texto a la izquierda */
+}
+
+/* Texto */
+.Historia_y_Cultura .texto {
+      align-items: center;
+    flex: 1 1 50%;
+    max-width: 100%;
+}
+
+.Historia_y_Cultura .texto h3 {
+    font-size: 30px;
+    align-items: center;
+    color: #004080;
+    margin-bottom: 25px;
+}
+
+.Historia_y_Cultura .texto p {
+    font-size: 25px;
+    color: #000000;
+    line-height: 1.6;
+
+}
+
+/* Imagen */
+.Historia_y_Cultura img {
+    flex: 1 1 40%;
+    max-width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 51, 102, 0.3);
+    transition: transform 0.4s ease;
+}
+.Historia_y_Cultura img:hover {
+    transform: scale(1.05);
+}
+
+
+/* ====== CARRUSEL ====== */
+.carrusel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+
+.carrusel img {
+    width: 100%;
+    height: 95%;
+    max-width: 600px;
+    border-radius: 12px;
+    display: none;
+    box-shadow: 0 6px 15px rgba(0, 51, 102, 0.3);
+}
+
+
+.carrusel img.active {
+    display: block;
+    animation: fade 1s ease-in-out;
+}
+
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0066cc;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 51, 102, 0.4);
+    transition: background 0.3s;
+    z-index: 10;
+}
+.carousel-btn:hover {
+    background: #004080;
+}
+
+
+.carousel-btn.prev {
+    left: 10px;
+}
+.carousel-btn.next {
+    right: 10px;
+}
+
+
+/*-------*/
+
+.Oportunidades-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 6px solid;
+  border-image-slice: 1;
+  border-width: 6px;
+  border-image-source: linear-gradient(to right, #ff7300, #ffd27f);
+  box-shadow: 0 6px 15px rgba(255, 115, 0, 0.5);
+  filter: brightness(1.1);
+  transition: transform 0.4s ease;
+  margin-bottom: 2rem;
+}
+.Oportunidades-content {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4A4A4A;
+  padding: 0 1rem 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff8f0;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(255, 140, 0, 0.1);
+}
+
+h2 {
+    
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color:   #ffffff;
+  margin-bottom: 1.8rem;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-shadow: 5px 5px  #102542;
+}
+
+.carousel-item h2{
+    display: inline-block;
+    margin: 15px auto 25px auto;
+    padding: 12px 25px;
+    background: #102542;
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color:   #ffffff;
+    margin-bottom: 1.8rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-shadow: 5px 5px  #102542;
+}
+
+.carousel-caption h2{
+     display: inline-block;
+    margin: 15px auto 25px auto;
+    padding: 12px 25px;
+    background: #102542;
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color:   #ffffff;
+    margin-bottom: 1.8rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-shadow: 5px 5px  #102542;
+} 
+
+.container h1{
+  padding: 1%;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #102542;
+  text-shadow: 2px 2px 6px  #102542;
+  margin-bottom: 1.5rem;
+  font-family: 'Georgia', serif;
+
+}
+.Oportunidades-group {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.Oportunidades-1 {
+  flex: 1 1 250px;
+  background: #fff3e6;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(255, 165, 79, 0.2);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.Oportunidades-1:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(255, 140, 0, 0.4);
+}
+
+.Oportunidades-1 img {
+  width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 0.9rem;
+  filter: drop-shadow(2px 3px 2px rgba(0,0,0,0.08));
+}
+
+.Oportunidades-1 h3 {
+  font-family: 'Georgia', serif;
+  color: #102542 ;
+  margin-bottom: 0.7rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.Oportunidades-1 p {
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+/*TURISMO*/
+
+/* ====== SECCIÓN TURISMO ====== */
+.Turismo {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.Turismo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #004080;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* ====== GRUPO DE IMÁGENES ====== */
+.Turismo-group {
+    position: relative;   /* contenedor padre */
+    width: 100%;
+    height: 400px;
+}
+
+/* ====== CONTENEDOR DE CADA LUGAR ====== */
+.Turismo-group div {
+    position: absolute;
+    top: 30;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 51, 102, 0.3);
+    transition: transform 0.3s ease;
+    background: #fff;
+    width: 30%;   /* cada tarjeta ocupa un tercio aprox */
+    height: 100%;
+    text-align: center;
+    
+   
+}
+
+/* targeta izquierda */
+.Turismo-group div:nth-child(1) {
+    left: 50%;
+}
+
+/* targeta  centro */
+.Turismo-group div:nth-child(2) {
+    left: 70%;
+}
+
+/* targeta  derecha */
+.Turismo-group div:nth-child(3) {
+    left: 35%;
+}
+
+
+
+.Turismo-group div:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+
+/* ====== IMÁGENES ====== */
+.Turismo-group img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 4px solid #004080;
+    transition: transform 0.5s ease;
+}
+
+.Turismo-group div:hover img {
+    transform: scale(1.1);
+}
+
+/* ====== BOTONES ====== */
+.btn_turismo {
+    display: inline-block;
+    margin: 15px auto 25px auto;
+    padding: 12px 25px;
+    background: #102542;   ;
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);
+}
+
+.btn_turismo:hover {
+    background: #004080;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 51, 102, 0.4);
+}
+
+/* Sección Galería */
+
+.datocurioso {
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #e6f2ff, #cce6ff);
+    text-align: center;
+}
+
+.datocurioso h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #004080;
+    text-transform: uppercase;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 51, 102, 0.3);
+}
+
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    min-width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+.carousel-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 64, 128, 0.6);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.carousel-container button:hover {
+    background: rgba(0, 64, 128, 0.9);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.datocurioso-texto p {
+    color: #000000;
+    transition: color 0.4s ease;
+}
+
+.datocurioso-texto p:hover {
+    color: #0066cc;
+}
+
+/*foOter*/
+
+footer {
+    background: #003366;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .contact-form {
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+footer .contact-form h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #cce6ff;
+}
+
+footer .contact-form input,
+footer .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+footer .contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+footer .contact-form button {
+    background: #0099ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+footer .contact-form button:hover {
+    background: #0066cc;
+}
+
+
